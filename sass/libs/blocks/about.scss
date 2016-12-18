@@ -1,0 +1,46 @@
+.about {
+  margin-top: -37px;
+  padding-top: 12px;
+  font-size: 0;
+  text-align: center;
+  background: white url('../img/pattern.png') center bottom repeat;
+  &__header {
+    margin-bottom: 18px;
+    color: #0199ec;
+    font-size: 20px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__company {
+    width: 65%;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  &__info {
+    padding: 0 20px;
+    max-width: 640px;
+    margin: 0 auto 38px;
+    font-size: 12px;
+    text-align: center;
+  }
+  &__block {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #eaeaeb;
+  }
+  &__block-name {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__img {
+    overflow: hidden;
+  }
+}

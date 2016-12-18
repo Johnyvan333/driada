@@ -1,15 +1,18 @@
 @import "bourbon";
 
-@import "libs/normalize";
+// @import "libs/normalize";
 
 @import "libs/variables",
         "libs/mixins",
         "libs/functions";
 
 @import "libs/fonts";
+@import "libs/stylesheet";
 
 @import "libs/base";
 
 @import "libs/blocks/header",
-        "libs/blocks/main",
+        "libs/blocks/about",
+        "libs/blocks/projects",
+        "libs/blocks/variation",
         "libs/blocks/footer";

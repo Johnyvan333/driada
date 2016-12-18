@@ -1,0 +1,43 @@
+.projects {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  &__text {
+    max-width: 660px;
+    padding: 20px 30px 10px;
+    margin: 0 auto 20px;
+    color: #888;
+    text-align: left;
+  }
+}
+.slider-project {
+  position: relative;
+  max-width: 830px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  font-size: 0;
+  &__btn-block {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 0;
+    z-index: 10;
+  }
+  &__btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    border: none;
+    &:hover {
+      background: #ddd;
+    }
+  }
+  &__btn + &__btn {
+    margin-left: 5px;
+  }
+}

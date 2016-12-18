@@ -1,6 +1,56 @@
 html {
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
 }
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size: 12px;
+}
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.block-header {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+.block-ref {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 30px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  background: #65abd0;
+  border-radius: 3px;
+  &--variation {
+    margin: 0;
+  }
+  &--email {
+    width: 116px;
+  }
+  &:hover {
+    background: #559bc0;
+  }
+  &:active {
+    background: #357ba0;
+  }
 }
