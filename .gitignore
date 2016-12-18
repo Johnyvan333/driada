@@ -1,4 +1,11 @@
+.DS_Store
+.idea
+build
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+css/*.css
 node_modules/
-dist/
-app/css/
-app/header.min.css
+Thumbs.db
