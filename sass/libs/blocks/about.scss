@@ -13,7 +13,8 @@
     text-align: center;
   }
   &__company {
-    width: 65%;
+    max-width: 500px;
+    padding: 0 20px;
     margin: 0 auto 20px;
     font-size: 14px;
     line-height: 1.3em;
@@ -21,7 +22,7 @@
   }
   &__info {
     padding: 0 20px;
-    max-width: 640px;
+    max-width: 500px;
     margin: 0 auto 38px;
     font-size: 12px;
     text-align: center;
@@ -42,5 +43,39 @@
   }
   &__img {
     overflow: hidden;
+  }
+}
+@media #{$desktop} {
+  .about {
+    padding-top: 30px;
+    margin-top: -70px;
+    &__header {
+      margin-bottom: 65px;
+    }
+    &__info {
+      margin-bottom: 85px;
+    }
+    &__block-inner {
+      margin: 0 auto;
+      font-size: 0;
+    }
+    &__block {
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+      margin-bottom: 0.5%;
+    }
+    &__block + &__block {
+      margin-left: 0.5%;
+    }
+    &__img {
+      height: 250px;
+      width: auto;
+      & img {
+        height: 100%;
+        max-width: auto;
+        width: auto;
+      }
+    }
   }
 }

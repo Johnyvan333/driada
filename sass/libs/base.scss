@@ -10,6 +10,7 @@ html {
 }
 body {
   min-width: 320px;
+  max-width: 1450px;
   padding: 0;
   margin: 0 auto;
   font-family: Helvetica, sans-serif;
@@ -52,5 +53,28 @@ img {
   }
   &:active {
     background: #357ba0;
+  }
+}
+@media #{$desktop} {
+  .block-header {
+    font-size: 40px;
+    &--projects {
+      width: 60%;
+      text-align: left;
+    }
+    &--variation {
+      text-align: left;
+    }
+  }
+  .block-ref {
+    &--projects {
+      position: absolute;
+      left: 50%;
+      bottom: 80px;
+      margin-left: 60px;
+    }
+    &--email {
+      width: 176px;
+    }
   }
 }

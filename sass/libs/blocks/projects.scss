@@ -3,12 +3,15 @@
   padding-bottom: 30px;
   text-align: center;
   &__text {
-    max-width: 660px;
-    padding: 20px 30px 10px;
+    max-width: 500px;
+    padding: 20px 20px 10px;
     margin: 0 auto 20px;
     color: #888;
     text-align: left;
   }
+}
+.project-author {
+  display: none;
 }
 .slider-project {
   position: relative;
@@ -16,6 +19,17 @@
   margin: 0 auto 30px;
   padding: 0 15px;
   font-size: 0;
+  &__img-wrapper {
+    overflow: hidden;
+    text-align: center;
+    & img {
+      min-height: 100%;
+      min-width: 100%;
+      max-width: none;
+      height: auto;
+      width: auto;
+    }
+  }
   &__btn-block {
     position: absolute;
     bottom: 0;
@@ -39,5 +53,58 @@
   }
   &__btn + &__btn {
     margin-left: 5px;
+  }
+}
+@media #{$desktop} {
+  .projects {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @include clearfix;
+    &__text-wrapper {
+      float: right;
+      width: 50%;
+      margin: -20px 0 0;
+      padding-left: 60px;
+      padding-right: 50px;
+    }
+    &__text {
+      max-width: auto;
+      width: 70%;
+      margin: 0;
+      padding: 0;
+      max-height: 130px;
+      overflow-y: scroll;
+      @media (min-width: 1250px) {
+        max-height: 230px;
+      }
+    }
+  }
+  .project-author {
+    display: block;
+    float: right;
+    width: 90px;
+    margin-top: 20px;
+    text-align: left;
+    &__img {
+      margin-bottom: 10px;
+    }
+    &__name {
+      color: black;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  .slider-project {
+    width: 50%;
+    max-width: 623px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    &__btn-block {
+      right: 0;
+    }
   }
 }

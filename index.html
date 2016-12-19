@@ -52,15 +52,39 @@
 
   <!-- svg-sprite ends -->
 
+  <input type="checkbox" id="menuBtn" name="menuBtn" value="menuBtn" style="display:none">
   <header class="page-header">
-    <input type="checkbox" id="menuBtn" name="menuBtn" value="menuBtn" style="display:none">
     <div class="top-panel">
-      <div class="top-panel__phone">8 (812) 748-14-04</div>
-      <a href="#" class="logo">
+      <div class="top-panel__phone">
+        <span class="top-panel__phone-desktop">Закажите бесплатный звонок!</span>
+        <span>8 (812) 748-14-04</span>
+      </div>
+      <a class="logo">
         <i class="sprite sprite-logo-mob"></i>
+        <i class="sprite sprite-logo"></i>
       </a>
       <label for="menuBtn" class="menu-btn"><i class="sprite sprite-hamburger"></i></label>
       <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">о нас</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">проекты</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">услуги</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">растения</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">цены</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__ref">контакты</a>
+          </li>
+        </ul>
       </nav>
     </div>
     <div class="option">
@@ -88,25 +112,34 @@
       <header class="about__header">создаем, преображаем, ухаживаем</header>
       <p class="about__company">Мы студия ландшафтного дизайна основанная в 2007 году в городе Санкт-Петербурге.</p>
       <p class="about__info">Предоставляем услуги высокого качества по благоустройству, проектированиию, озеленению и уходу за вашим садом.</p>
-      <div class="about__block">
-        <div class="about__img"><img src="img/first-block.jpg" alt="img"></div>
-        <p class="about__block-name">команда профессионалов</p>
-      </div>
-      <div class="about__block">
-        <div class="about__img"><img src="img/second-block.jpg" alt="img"></div>
-        <p class="about__block-name">мы на международных выставках</p>
-      </div>
-      <div class="about__block">
-        <div class="about__img"><img src="img/third-block.jpg" alt="img"></div>
-        <p class="about__block-name">отзывы о нас</p>
+      <div class="about__block-inner">
+        <div class="about__block">
+          <div class="about__img"><img src="img/first-block.jpg" alt="img"></div>
+          <p class="about__block-name">команда профессионалов</p>
+        </div>
+        <div class="about__block">
+          <div class="about__img"><img src="img/second-block.jpg" alt="img"></div>
+          <p class="about__block-name">мы на международных выставках</p>
+        </div>
+        <div class="about__block">
+          <div class="about__img"><img src="img/third-block.jpg" alt="img"></div>
+          <p class="about__block-name">отзывы о нас</p>
+        </div>
       </div>
     </section>
     <section class="projects">
-      <h3 class="block-header">Сад с прудом</h3>
-      <p class="projects__text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м 2 с зарыблением. Строительство фонтана, освещение, полив, ливневая канализация, посадка растений, уход.</p>
+      <div class="projects__text-wrapper">
+        <div class="project-author">
+          <div class="project-author__img"><img src="img/author.jpg" alt="author"></div>
+          <div class="project-author__name">Наталья дизайнер проекта</div>
+        </div>
+        <h3 class="block-header block-header--projects">Сад с прудом</h3>
+        <p class="projects__text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м 2 с зарыблением. Строительство фонтана, освещение, полив, ливневая канализация, посадка растений, уход.
+        </p>
+      </div>
       <div class="slider-project">
         <div class="slider-project__img-wrapper">
-          <img src="img/project.jpg" alt="Project 1" class="slider-project__img">
+          <img id="projectImg" src="img/project.jpg" alt="Project 1" class="slider-project__img">
         </div>
         <div class="slider-project__btn-block">
           <button id="sliderProjectLeft" class="slider-project__btn">
@@ -121,16 +154,28 @@
           </button>
         </div>
       </div>
-      <a href="#" class="block-ref">Все проекты</a>
+      <a href="#" class="block-ref block-ref--projects">Все проекты</a>
     </section>
     <section class="variation">
       <div class="variation__wrapper">
-        <h3 class="block-header">Готовые решения для вашего сада</h3>
+        <h3 class="block-header block-header--variation">Готовые решения для вашего сада</h3>
         <p class="variation__text">Мы предлогаем услугу быстрого озеленения и ландшафтного дизайна с готовыми композиционными решениями из растений, камней, отсыпки, декоративных элементов и газона.</p>
         <a href="#" class="block-ref block-ref--variation">Все варианты</a>
       </div>
       <div class="slider-variation">
-        <img src="img/variant1.jpg" alt="Picture 1" class="slider-variation__img">
+        <input type="radio" id="variationBtn1" class="slider-variation__btn" name="variationBtn" style="display:none" checked>
+        <input type="radio" id="variationBtn2" class="slider-variation__btn" name="variationBtn" style="display:none">
+        <input type="radio" id="variationBtn3" class="slider-variation__btn" name="variationBtn" style="display:none">
+        <div class="slider-variation__toggle-block">
+          <label for="variationBtn1" class="slider-variation__toggle-item"></label>
+          <label for="variationBtn2" class="slider-variation__toggle-item"></label>
+          <label for="variationBtn3" class="slider-variation__toggle-item"></label>
+        </div>
+        <div class="slider-variation__img-wrapper">
+          <img src="img/variation1.jpg" alt="Picture 1" class="slider-variation__img slider-variation__img--1" id="variationImg1">
+          <img src="img/variation2.jpg" alt="Picture 2" class="slider-variation__img slider-variation__img--2" id="variationImg2">
+          <img src="img/variation3.jpg" alt="Picture 3" class="slider-variation__img slider-variation__img--3" id="variationImg3">
+        </div>
       </div>
     </section>
     <section class="email-block">
@@ -158,9 +203,16 @@
         <p class="address-block__time">Мы рады видеть Вас у нас в офисе!<span>с пн.-пт. с 11-19</span></p>
       </div>
       <div class="map">
-        <img src="img/map.jpg" alt="карта">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.1991165460884!2d30.332062951298315!3d60.04492798182615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634eb29cd28b9%3A0xde516927cc7cc375!2z0YPQuy4g0JXRgdC10L3QuNC90LAsIDE40LoyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk0MzU2!5e0!3m2!1sru!2sru!4v1482160617112"
+            allowfullscreen></iframe>
+        <img id="staticMap" src="img/map.jpg" alt="карта">
+        <div class="map__img-add">
+          <img src="img/foto-block-5.jpg" alt="здание студии">
+        </div>
       </div>
+      <div class="page-footer__copyright">&#169; 2015 - все права защищены</div>
       <div class="social-block">
+        <span class="social-block__header">Мы в соцсетях:</span>
         <a href="#" class="social-item social-item--fb">
           <svg width="12px" height="25px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-logo"></use>
@@ -179,6 +231,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.min.js"></script>
 
 </body>
 
