@@ -124,6 +124,13 @@
       font-style: italic;
       font-size: 12px;
       text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+      &:active {
+        text-decoration: underline;
+      }
     }
   }
   .logo {

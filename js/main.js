@@ -2,10 +2,32 @@ var staticMap = document.querySelector('#staticMap');
 var sliderProjectLeft = document.querySelector('#sliderProjectLeft');
 var sliderProjectRight = document.querySelector('#sliderProjectRight');
 var projectImg = document.querySelector('#projectImg');
-var variationImgInner = document.querySelector('.slider-variation__img-wrapper')
+var variationImgInner = document.querySelector('.slider-variation__img-wrapper');
+var modalPhoneInner = document.querySelector('.modal-phone');
+var modalPhoneName = document.querySelector('#modalName');
+var modalClose = document.querySelector('.modal-close');
+var modalPhoneOpen = document.querySelector('.top-panel__phone-desktop')
 
 // убираем картинку статичной карты
 staticMap.style.display = 'none';
+
+// модальное окно
+function setModalToggle() {
+  modalPhoneOpen.addEventListener('click', function() {
+    modalPhoneInner.style.display = 'block';
+  });
+  modalClose.addEventListener('click', function() {
+    modalPhoneInner.style.display = 'none';
+  });
+  window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+      if (modalPhoneInner.style.display === 'block') {
+        modalPhoneInner.style.display = 'none';
+      }
+    }
+  });
+}
+setModalToggle();
 
 // слайдер для блока projects
 function setProjectSlider() {
